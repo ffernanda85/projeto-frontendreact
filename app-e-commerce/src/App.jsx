@@ -5,12 +5,10 @@ import { Main } from './components/main/Main'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
-  console.log(product)
-  
+    
   return (
     <body>
       <Header />
-      
       <Main
         product={product}
       />
