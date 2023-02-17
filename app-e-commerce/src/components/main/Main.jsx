@@ -13,10 +13,6 @@ export function Main(props) {
                     <option>Menor Preço</option>
                     <option>Maior Preço</option>
                 </SelectContainer>
-
-                <label for='color'>
-                    <input id="color" type={"checkbox"}/>
-                </label>
             </FilterContainer>
 
             <section>

@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const ContainerHeader = styled.header`
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 `
 
 export const HeaderTop = styled.div`
@@ -24,39 +27,34 @@ export const ImageLogo = styled.img`
 `
 
 export const HeaderNav = styled.div`
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     gap: 2rem;
     background-color: rgb(139,139,139);
 
     button {
-        width: 8vw;
+        width:10vw;
         font-size: 1rem;
         font-weight: 700;
         background-color: transparent;
         border: none;
+        cursor: pointer;
+        position: relative;
 
-        a {
-            position: relative;
-            color: black;
-            text-decoration-line: none;
-        }
-
-        a::after {
+        ::after {
             content: ' ';
             width: 0;
             height: .3rem;
             background-color: black;
             border-radius: 10px;
             position: absolute;
-            top: 1.5rem;
-            bottom: 0;
+            top: 2.5rem;
             left: 0;
             transition: all .3s ease-in-out;
         }
 
-        a:hover::after {
+        :hover::after {
             width: 100%;
             opacity: .5;
         }
@@ -121,15 +119,6 @@ export const ContainerLogin = styled.div`
     p, a {
         color: white;
     }
-`
-
-export const ContainerCar = styled.div`
-    display: flex;
-    align-items: center;
-    font-family: inherit;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: gray;
 `
 
 export const CarImg = styled.img`

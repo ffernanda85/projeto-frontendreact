@@ -1,8 +1,18 @@
-import { HeaderTop, Logo, NavSearch, CarImg, ContainerCar, ContainerHeader, HeaderNav, ImageLogo, ContainerLogin } from "./styledHeader"
+import { HeaderTop, Logo, NavSearch, CarImg,  ContainerHeader, HeaderNav, ImageLogo, ContainerLogin } from "./styledHeader"
 import ShopCar from '../img/car.svg'
 import Login from '../img/login.svg'
 
-export function Header() {
+export function Header(props) {
+
+    const {setIsOn, setGender} = props
+
+    console.log(props)
+
+    function selectFilter(e) {
+        setGender(e.target.value)
+        setIsOn(true)
+    }
+
     return (
         <ContainerHeader>
             <HeaderTop>
@@ -21,16 +31,15 @@ export function Header() {
                     <p>Olá, faça seu <a href="" >login</a> ou <a href="">cadastre-se</a></p>
                 </ContainerLogin>
 
-                <ContainerCar>
-                    <CarImg src={ShopCar}/>
-                </ContainerCar>
+                <CarImg src={ShopCar} />
+
             </HeaderTop>
             <HeaderNav>
-                <button><a href="">Todos os Produtos</a></button>
-                <button><a href="">Moda Masculina</a></button>
-                <button><a href="">Moda Feminina</a></button>
-                <button><a href="">Moda Infantil</a></button>
-                <button><a href="">Camisetas Regata</a></button>
+                <button value='todos' onClick={(e)=>selectFilter(e)}>Todos os Produtos</button>
+                <button value='masculino' onClick={(e)=>selectFilter(e)}>Moda Masculina</button>
+                <button value='feminino' onClick={(e)=>selectFilter(e)}>Moda Feminina</button>
+                <button value='infantil' onClick={(e)=>selectFilter(e)}>Moda Infantil</button>
+                <button value='regata' onClick={(e)=>selectFilter(e)}>Camisetas Regata</button>
             </HeaderNav>
         </ContainerHeader>
     )

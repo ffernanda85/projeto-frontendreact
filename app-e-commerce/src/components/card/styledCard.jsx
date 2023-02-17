@@ -7,6 +7,7 @@ export const CardContent = styled.div`
     border: none;
     border-radius: 8px;
     width: 20%;
+    max-height: 45vh;
     padding-bottom: 1rem;
     background-color: white;
 
@@ -17,7 +18,7 @@ export const CardContent = styled.div`
 
     button {
         width: 8vw;
-        height: 3vh;
+        height: 4vh;
         font-size: 1rem;
         font-weight: bold;
         border: none;

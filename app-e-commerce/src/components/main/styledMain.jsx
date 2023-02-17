@@ -4,6 +4,7 @@ export const MainContainer = styled.main`
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: rgb(220,220,220);
+    min-height: 120vh;
 
     section {
         margin-top: 2.5rem;
