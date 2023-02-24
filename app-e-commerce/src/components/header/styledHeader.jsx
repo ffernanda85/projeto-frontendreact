@@ -6,16 +6,16 @@ export const ContainerHeader = styled.header`
     position: sticky;
     top: 0;
     z-index: 1;
+    color: rgb(64, 64, 64);
 `
 
 export const HeaderTop = styled.div`
-    background-color: rgb(0,0,0);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: rgb(139,0,139);
     height: 18vh;
-`
+    `
 
 export const ImageLogo = styled.img`
     width: 60px;
@@ -24,15 +24,14 @@ export const ImageLogo = styled.img`
     box-shadow: 0 0 1em #87F, 0 0 1em #87F,
     0 0 1em #87F;
     background-color: rgb(139,0,139);
-`
+    `
 
 export const HeaderNav = styled.div`
     height: 6vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
-    background-color: rgb(139,139,139);
-
+    
     button {
         width:10vw;
         font-size: 1rem;
@@ -41,25 +40,25 @@ export const HeaderNav = styled.div`
         border: none;
         cursor: pointer;
         position: relative;
-
+        color: rgb(139,139,139);
+        
         ::after {
             content: ' ';
             width: 0;
             height: .3rem;
-            background-color: black;
+            background-color: rgb(139,139,139);
             border-radius: 10px;
             position: absolute;
-            top: 2.5rem;
+            top: 2.2rem;
             left: 0;
             transition: all .3s ease-in-out;
         }
-
+        
         :hover::after {
             width: 100%;
-            opacity: .5;
         }
     }
-` 
+    ` 
 
 export const Logo = styled.div`
     display: flex;
@@ -89,12 +88,12 @@ export const NavSearch = styled.nav`
         border: none;
         height: 2rem;
         width: 15vw;
-
+        
         :focus {
             outline: none;
         }
     }
-
+    
     button {
         border: none;
         height: 3.3vh;
@@ -109,7 +108,7 @@ export const NavSearch = styled.nav`
         width: 1.2vw;
         padding-left: .5rem;
     }
-`
+    `
 
 export const ContainerLogin = styled.div`
     display: flex;
@@ -119,9 +118,12 @@ export const ContainerLogin = styled.div`
     p, a {
         color: white;
     }
-`
+    `
 
 export const CarImg = styled.img`
     cursor: pointer;
-`
-
+    `
+export const DivAux = styled.div`
+    background-color: rgb(0,0,0);
+    
+    `

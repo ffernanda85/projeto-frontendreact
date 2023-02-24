@@ -2,7 +2,7 @@ export const dataProducts = [
     {
         codeProduct: '01',
         descriptionProduct: 'Astronauta Apaixonado',
-        sizeProduct: '',
+        nameProduct: 'camisa',
         colorProduct: 'preto',
         genderProduct: 'masculino',
         discount: 99,
@@ -22,7 +22,7 @@ export const dataProducts = [
 
     {
         codeProduct: '03',
-        descriptionProduct: 'Sistema Planetário',
+        descriptionProduct: 'Camisa Sistema Planetário',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 120,
@@ -32,7 +32,7 @@ export const dataProducts = [
 
     {
         codeProduct: '04',
-        descriptionProduct: 'Pequeno Principe',
+        descriptionProduct: 'Camisa Pequeno Principe',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 89,
@@ -42,7 +42,7 @@ export const dataProducts = [
 
     {
         codeProduct: '05',
-        descriptionProduct: 'Balões Planetários',
+        descriptionProduct: 'Camisa Balões Planetários',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 150,
@@ -52,7 +52,7 @@ export const dataProducts = [
 
     {
         codeProduct: '06',
-        descriptionProduct: 'O Gato e o ET',
+        descriptionProduct: 'Camisa O Gato e o ET',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 100,
@@ -62,7 +62,7 @@ export const dataProducts = [
 
     {
         codeProduct: '07',
-        descriptionProduct: 'Astronauta Na Lua',
+        descriptionProduct: 'Camisa Astronauta Na Lua',
         sizeProduct: '',
         colorProduct: 'preto',
         genderProduct: 'masculino',
@@ -73,7 +73,7 @@ export const dataProducts = [
 
     {
         codeProduct: '08',
-        descriptionProduct: 'O Homem e Universo',
+        descriptionProduct: 'Camisa O Homem e Universo',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 99,
@@ -83,7 +83,7 @@ export const dataProducts = [
 
     {
         codeProduct: '09',
-        descriptionProduct: 'Universo',
+        descriptionProduct: 'Camisa Universo',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 99,
@@ -93,7 +93,7 @@ export const dataProducts = [
 
     {
         codeProduct: '10',
-        descriptionProduct: 'Pequeno Principe',
+        descriptionProduct: 'Camisa Pequeno Principe',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 88,
@@ -113,7 +113,7 @@ export const dataProducts = [
 
     {
         codeProduct: '12',
-        descriptionProduct: 'Astronauta No Ar',
+        descriptionProduct: 'Camisa Astronauta No Ar',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 105,
@@ -123,7 +123,7 @@ export const dataProducts = [
 
     {
         codeProduct: '13',
-        descriptionProduct: 'Sistema Solar',
+        descriptionProduct: 'Camisa Sistema Solar',
         sizeProduct: '',
         genderProduct: 'masculino',
         discount: 60,
@@ -136,8 +136,8 @@ export const dataProducts = [
         descriptionProduct: 'Macacão Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 500,
+        priceProduct: 300,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/789/full/1.png?1676604783'
     },
 
@@ -146,38 +146,38 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 300,
+        priceProduct: 150,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/791/full/2.png?1676604858'
     },
 
     {
         codeProduct: '16',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Branca',
         sizeProduct: '',
-        genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        genderProduct: 'masculino',
+        discount: 320,
+        priceProduct: 100,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/792/full/4.jpg?1676604870'
     },
 
     {
         codeProduct: '17',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Branca Astronauta',
         sizeProduct: '',
-        genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        genderProduct: 'masculino',
+        discount: 90,
+        priceProduct: 40,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/795/full/6.jpg?1676604913'
     },
 
     {
         codeProduct: '18',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Mulher Astronauta',
         sizeProduct: '',
-        genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        genderProduct: 'feminino',
+        discount: 70,
+        priceProduct: 42,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/797/full/7.png?1676604921'
     },
 
@@ -186,8 +186,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 50,
+        priceProduct: 35,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/798/full/8.jpg?1676604934'
     },
     
@@ -196,8 +196,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 90,
+        priceProduct: 75,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/799/full/9.jpg?1676604947'
     },
 
@@ -206,28 +206,28 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 75,
+        priceProduct: 30,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/800/full/10.jpg?1676604955'
     },
 
     {
         codeProduct: '22',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Amor no Espaço',
         sizeProduct: '',
-        genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        genderProduct: 'feminino',
+        discount: 85,
+        priceProduct: 49,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/801/full/11.jpg?1676604964'
     },
 
     {
         codeProduct: '23',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Branca',
         sizeProduct: '',
-        genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        genderProduct: 'feminino',
+        discount: 80,
+        priceProduct: 50,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/802/full/13.jpg?1676604974'
     },    
 
@@ -236,8 +236,8 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 300,
+        priceProduct: 250,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/803/full/14.jpg?1676604983'
     },    
 
@@ -246,8 +246,8 @@ export const dataProducts = [
         descriptionProduct: 'Self Astronauta',
         sizeProduct: '',
         genderProduct: 'masculino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 100,
+        priceProduct: 75,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/804/full/15.jpg?1676604991'
     },    
 
@@ -256,8 +256,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Feminina',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 120,
+        priceProduct: 80,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/805/full/16.jpg?1676605000'
     },    
 
@@ -266,8 +266,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Astronauta',
         sizeProduct: '',
         genderProduct: 'masculino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 200,
+        priceProduct: 99,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/806/full/17.jpg?1676605008'
     },    
 
@@ -276,8 +276,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Foguete',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 110,
+        priceProduct: 80,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/807/full/18.jpg?1676605016'
     },    
 
@@ -286,8 +286,8 @@ export const dataProducts = [
         descriptionProduct: 'Camisa Mini Astronauta',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 60,
+        priceProduct: 40,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/808/full/19.jpg?1676605024'
     },    
 
@@ -296,8 +296,8 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Infantil',
         sizeProduct: '',
         genderProduct: 'infantil',
-        discount: 800,
-        priceProduct: 200,
+        discount: 120,
+        priceProduct: 90,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/809/full/infantil1.jpg?1676605039'
     },    
 
@@ -306,8 +306,8 @@ export const dataProducts = [
         descriptionProduct: 'Moletom Masculino',
         sizeProduct: '',
         genderProduct: 'masculino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 180,
+        priceProduct: 99,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/810/full/moletom.jpg?1676605053'
     },    
 
@@ -316,8 +316,8 @@ export const dataProducts = [
         descriptionProduct: 'Regata OVNI',
         sizeProduct: '',
         genderProduct: 'regata',
-        discount: 800,
-        priceProduct: 200,
+        discount: 40,
+        priceProduct: 28,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/811/full/regata1.jpg?1676605062'
     },    
 
@@ -326,8 +326,8 @@ export const dataProducts = [
         descriptionProduct: 'Regata Animação',
         sizeProduct: '',
         genderProduct: 'regata',
-        discount: 800,
-        priceProduct: 200,
+        discount: 40,
+        priceProduct: 25,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/812/full/regata2.jpg?1676605079'
     },    
 
@@ -336,8 +336,8 @@ export const dataProducts = [
         descriptionProduct: 'Regata OVNI Cinza',
         sizeProduct: '',
         genderProduct: 'regata',
-        discount: 800,
-        priceProduct: 200,
+        discount: 40,
+        priceProduct: 28,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/813/full/regata3.jpg?1676605106'
     },    
 
@@ -346,8 +346,8 @@ export const dataProducts = [
         descriptionProduct: 'Conj. Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 200,
+        discount: 400,
+        priceProduct: 220,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/814/full/web1.jpg?1676605118'
     },   
 
@@ -356,8 +356,8 @@ export const dataProducts = [
         descriptionProduct: 'Conj. Camisa+Short Fem',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 380,
+        discount: 100,
+        priceProduct: 78,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/815/full/web2.jpg?1676605130'
     },   
 
@@ -366,8 +366,8 @@ export const dataProducts = [
         descriptionProduct: 'Conj. Camisa+Calça Fem',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 340,
+        discount: 300,
+        priceProduct: 190,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/816/full/web3.jpg?1676605140'
     },   
 
@@ -376,8 +376,8 @@ export const dataProducts = [
         descriptionProduct: 'Conj. Camisa+Saia Fem',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 750,
+        discount: 350,
+        priceProduct: 250,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/817/full/web4.jpg?1676605151'
     },   
 
@@ -386,8 +386,8 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 700,
+        discount: 700,
+        priceProduct: 500,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/818/full/web5.jpg?1676605160'
     },   
 
@@ -396,8 +396,8 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 500,
+        discount: 500,
+        priceProduct: 450,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/819/full/web6.jpg?1676605169'
     },   
 
@@ -407,7 +407,7 @@ export const dataProducts = [
         sizeProduct: '',
         genderProduct: 'feminino',
         discount: 800,
-        priceProduct: 300,
+        priceProduct: 680,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/820/full/web7.jpg?1676605177'
     },   
 
@@ -416,8 +416,8 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
-        priceProduct: 300,
+        discount: 600,
+        priceProduct: 385,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/821/full/web8.jpg?1676605185'
     },  
     
@@ -426,7 +426,7 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
+        discount: 560,
         priceProduct: 499,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/822/full/web9.jpg?1676605194'
     },  
@@ -436,7 +436,7 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
+        discount: 730,
         priceProduct: 600,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/823/full/web10.jpg?1676605203'
     },  
@@ -446,7 +446,7 @@ export const dataProducts = [
         descriptionProduct: 'Conjunto Feminino',
         sizeProduct: '',
         genderProduct: 'feminino',
-        discount: 800,
+        discount: 550,
         priceProduct: 500,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/824/full/web11.jpg?1676605213'
     }  
