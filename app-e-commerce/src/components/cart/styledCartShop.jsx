@@ -47,14 +47,19 @@ export const HorizontalLine = styled.hr`
 export const SubtitleContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 1rem;  
+    padding-left: 1rem; 
+    gap: 1rem; 
     font-weight: 700;  
 `
 export const ItemCart = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 1rem;  
+    align-items: center;
+    gap: 1rem;  
 `
 export const ItemCartContainer = styled.div`
     
+`
+export const ImgProduct = styled.img`
+    width: 150px;
 `

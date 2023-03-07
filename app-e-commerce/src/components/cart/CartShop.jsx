@@ -21,7 +21,14 @@ export function CartShop(props) {
                         </s.SubtitleContainer>
                         <s.HorizontalLine />
                         <div>
-                            <ItemCart />
+                            {
+                                cart.map((item, index) =>
+                                    <ItemCart
+                                        item={item}
+                                        key={index}
+                                    />
+                                    )
+                            }
                         </div>
                     </div>
                 </s.BasketContainer>
