@@ -3,7 +3,8 @@ import { dataProducts } from './components/products/Products'
 import { Header } from './components/header/Header'
 import { Main } from './components/main/Main'
 import { Filter, SortingArray } from './components/filter/Filter'
-import {Test} from './Fla' 
+import { Test } from './Fla'
+import { CartShop } from './components/cart/CartShop'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
@@ -14,6 +15,8 @@ function App() {
   const [isOnTriage, setIsOnTriage] = useState(false)
   const [vMin, setvMin] = useState(0)
   const [vMax, setvMax] = useState(0)
+  const [screen, setScreen] = useState('main')
+  const [cart, setCart] = useState([])
 
   function setFilterIsOn() {
     setIsOn(true)
@@ -24,7 +27,7 @@ function App() {
   }
 
   if (isOn) {
-    Filter({ setProduct, gender, description, vMin, vMax })
+    Filter({ setProduct, gender, description, vMin, vMax, setDescription })
     setIsOn(false)
   }
 
@@ -41,21 +44,32 @@ function App() {
         description={description}
         setDescription={setDescription}
         setFilterIsOn={setFilterIsOn}
+        setScreen={setScreen}
       />
-      <Main
-        product={product}
-        qtdProducts={qtdProducts}
-        triage={triage}
-        setTriage={setTriage}
-        SortingArray={SortingArray}
-        setIsOnTriage={setIsOnTriage}
-        vMin={vMin}
-        vMax={vMax}
-        setvMin={setvMin}
-        setvMax={setvMax}
-        setIsOn={setIsOn}
-        setFilterIsOn={setFilterIsOn}
-      />
+      {
+        screen === 'main' ?
+          <Main
+            product={product}
+            qtdProducts={qtdProducts}
+            triage={triage}
+            setTriage={setTriage}
+            SortingArray={SortingArray}
+            setIsOnTriage={setIsOnTriage}
+            vMin={vMin}
+            vMax={vMax}
+            setvMin={setvMin}
+            setvMax={setvMax}
+            setIsOn={setIsOn}
+            setFilterIsOn={setFilterIsOn}
+            setCart={setCart}
+            cart={cart}
+          />
+          :
+          <CartShop
+            setScreen={setScreen}
+            cart={cart}
+          />
+      }
       <footer></footer>
     </body>
   )

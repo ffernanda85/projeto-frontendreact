@@ -54,7 +54,6 @@ export const BtnAdd = styled.button`
     color: white;
     cursor: pointer;
     line-height: .5rem;
-    
     :active {
         opacity: .7;
     }

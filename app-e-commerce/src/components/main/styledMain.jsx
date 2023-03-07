@@ -6,25 +6,18 @@ export const MainContainer = styled.main`
     min-height: 120vh;
     font-family: 'Roboto', sans-serif;
     color: rgb(64, 64, 64);
-
-    section {
-        margin-top: 2.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    }
 `
-export const FilterContainer = styled.div`
+export const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 2.5rem;
+    gap: 1rem;
 `
 export const SelectContainer = styled.div`
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
     gap: .8rem;
+    padding-top: 2.5rem;
 
     select {
         height: 3.5vh;
@@ -36,6 +29,23 @@ export const SelectContainer = styled.div`
             outline: none;
         }
     }
+`
+export const OrderFilter = styled.div`
+    display: flex;
+    gap: .5rem;
+`
+export const CardContainer = styled.section`
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+`
+export const FilterContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2.5rem;
 `
 export const PriceContainer = styled.div`
     display: flex;

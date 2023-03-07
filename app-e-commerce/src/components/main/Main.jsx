@@ -1,9 +1,9 @@
-import { MainContainer, FilterContainer, SelectContainer, PriceContainer, InputContainer, InputPrice, LabelPrice, BtnFilter } from "./styledMain"
+import { MainContainer, ContentContainer, CardContainer, FilterContainer, SelectContainer, PriceContainer, OrderFilter, InputContainer, InputPrice, LabelPrice, BtnFilter } from "./styledMain"
 import { Card } from "../card/Card"
 import { Container } from "../../Container"
 
 export function Main(props) {
-    const { product, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn } = props
+    const { product, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -12,26 +12,7 @@ export function Main(props) {
     return (
         <Container>
             <MainContainer>
-
                 <FilterContainer>
-                    <h4>Produtos Disponiveis: {qtdProducts()}</h4>
-
-                    <SelectContainer>
-                        <p>Ordenar</p>
-
-                        <select
-                            value={triage}
-                            onChange={(e) => {
-                                setTriage(e.target.value);
-                                setIsOnTriage(true)
-                            }}
-                        >
-                            <option value='relevance'>Relevância</option>
-                            <option value='down'>Menor Preço</option>
-                            <option value='up'>Maior Preço</option>
-                        </select>
-                    </SelectContainer>
-
                     <PriceContainer>
                         <h4>Preço</h4>
                         <InputContainer>
@@ -53,13 +34,40 @@ export function Main(props) {
 
                 </FilterContainer>
 
-                <section>
-                    {
-                        product.map(item =>
-                            <Card item={item} />
-                        )
-                    }
-                </section>
+                <ContentContainer>
+                    <SelectContainer>
+                        <h4>Produtos Disponiveis: {qtdProducts()}</h4>
+                        <OrderFilter>
+                            <p>Ordenar</p>
+
+                            <select
+                                value={triage}
+                                onChange={(e) => {
+                                    onChangeHandler(e, setTriage);
+                                    setIsOnTriage(true)
+                                }}
+                            >
+                                <option value='relevance'>Relevância</option>
+                                <option value='down'>Menor Preço</option>
+                                <option value='up'>Maior Preço</option>
+                            </select>
+                        </OrderFilter>
+                    </SelectContainer>
+
+                    <CardContainer>
+                        {
+                            product.map((item,index) =>
+                                <Card
+                                    item={item}
+                                    key={index}
+                                    setCart={setCart}
+                                    cart={cart}
+                                />
+                            )
+                        }
+                    </CardContainer>
+                </ContentContainer>
+
             </MainContainer>
         </Container>
     )

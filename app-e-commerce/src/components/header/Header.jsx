@@ -5,7 +5,7 @@ import { Container } from "../../Container"
 
 
 export function Header(props) {
-    const { setGender, description, setDescription, setFilterIsOn } = props
+    const { setGender, description, setDescription, setFilterIsOn, setScreen } = props
 
     function selectFilter(e, setState, text) {
         setState(e.target.value)
@@ -34,7 +34,7 @@ export function Header(props) {
                             <p>Olá, faça seu <a href="" >login</a> ou <a href="">cadastre-se</a></p>
                         </ContainerLogin>
 
-                        <CarImg src={ShopCar} />
+                        <CarImg src={ShopCar} onClick={()=>setScreen()} />
 
                     </HeaderTop>
                     <HeaderNav>
