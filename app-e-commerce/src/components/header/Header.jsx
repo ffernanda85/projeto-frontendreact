@@ -34,7 +34,7 @@ export function Header(props) {
                             <p>Olá, faça seu <a href="" >login</a> ou <a href="">cadastre-se</a></p>
                         </ContainerLogin>
 
-                        <CarImg src={ShopCar} onClick={()=>setScreen()} />
+                        <CarImg src={ShopCar} onClick={()=>setScreen("Cart")} />
 
                     </HeaderTop>
                     <HeaderNav>

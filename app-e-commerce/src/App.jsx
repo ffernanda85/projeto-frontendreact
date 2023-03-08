@@ -5,6 +5,7 @@ import { Main } from './components/main/Main'
 import { Filter, SortingArray } from './components/filter/Filter'
 import { Test } from './Fla'
 import { CartShop } from './components/cart/CartShop'
+import { PageConfirm } from './components/pageConfirm/PageConfirm'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
@@ -65,10 +66,16 @@ function App() {
             cart={cart}
           />
           :
-          <CartShop
-            setScreen={setScreen}
-            cart={cart}
-          />
+          screen === 'Cart' ?
+            <CartShop
+              setScreen={setScreen}
+              cart={cart}
+            />
+            :
+            <PageConfirm
+              cart={cart}
+              setScreen={setScreen}
+            />
       }
       <footer></footer>
     </body>

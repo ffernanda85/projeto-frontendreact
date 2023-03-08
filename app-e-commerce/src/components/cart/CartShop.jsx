@@ -7,10 +7,9 @@ export function CartShop(props) {
 
     return (
         <Container>
-            <s.BtnCloserCart onClick={() => setScreen('main')}>X</s.BtnCloserCart>
             <s.CartShopContainer>
                 <s.BasketContainer>
-                    <h1>minha cesta</h1>
+                    <s.TitleCart>minha cesta</s.TitleCart>
                     <div>
                         <s.SubtitleContainer>
                             <p>produto</p>
@@ -27,12 +26,31 @@ export function CartShop(props) {
                                         item={item}
                                         key={index}
                                     />
-                                    )
+                                )
                             }
                         </div>
                     </div>
                 </s.BasketContainer>
-                <s.DetailsContainer></s.DetailsContainer>
+                <s.DetailsContainer>
+                    <h2>resumo do pedido</h2>
+                    <s.DetailsValue>
+                        <p>01 produto</p>
+                        <p>R$ 5000000</p>
+                    </s.DetailsValue>
+                    <s.DetailsValue>
+                        <p>frete</p>
+                        <p>grátis</p>
+                    </s.DetailsValue>
+                    <s.HorizontalLine />
+                    <s.DetailsValue>
+                        <h4>total</h4>
+                        <h4>R$ 5000000</h4>
+                    </s.DetailsValue>
+                    <s.HorizontalLine />
+                    <s.BtnCloserCart onClick={() => setScreen('Confirm')}>Confirmar Compra</s.BtnCloserCart>
+                    <s.BtnCloserCart onClick={() => setScreen('main')}>Comprar Mais Produtos</s.BtnCloserCart>
+
+                </s.DetailsContainer>
             </s.CartShopContainer>
 
 

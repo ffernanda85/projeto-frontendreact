@@ -13,7 +13,7 @@ export const BasketContainer = styled.div`
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background-color: white;
     overflow-y: auto;
     border-radius: .5rem;
@@ -21,45 +21,89 @@ export const BasketContainer = styled.div`
 export const DetailsContainer = styled.div`
     background-color: rgb(248, 248, 248);
     border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+`
+export const DetailsValue = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 export const BtnCloserCart = styled.button`
-    font-weight: 700;
-    background-color: red;
-    color: rgb(64, 64, 64);
-    cursor: pointer;
+    width: 280px;
+    padding: 1rem ;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    :hover {
-        background-color: rgb(64, 64, 64);
-        color: red;
+    border-radius: 5px;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    cursor: pointer;
+    line-height: .5rem;
+    :hover{
+        background-color: white;
+        color: rgb(64, 64, 64);
+        border: 1px solid rgb(64, 64, 64);
+    }
+    :active {
+        opacity: .7;
     }
 `
 export const TitleCart = styled.h1`
-    
+    padding-top: 1.5rem;
 `
 export const HorizontalLine = styled.hr`
-    margin: 1rem 0.5rem 1rem 1rem;
+    width: 98.8%;
+    margin: 1rem 0;
     background-color: rgb(64, 64, 64); 
     opacity: 0.5;
 `
 export const SubtitleContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding-left: 1rem; 
-    gap: 1rem; 
+    justify-items: center;
     font-weight: 700;  
 `
 export const ItemCart = styled.div`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    gap: 1rem;  
+    justify-items: center;
 `
 export const ItemCartContainer = styled.div`
     
 `
 export const ImgProduct = styled.img`
-    width: 150px;
+    width: 100px;
+`
+export const Qtd = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+
+    p {
+        cursor: pointer;
+        :hover{
+            text-decoration-line: underline;
+        }
+    }
+`
+export const AmountContainer = styled.div`
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    gap: .7rem;
+    border: 1px solid rgb(64, 64, 64);
+    border-radius: 5px;
+    padding: .5rem;
+`
+export const BtnDown = styled.img`
+    width: 25px;
+    cursor: pointer;
+`
+export const BtnUp = styled.img`
+    width: 25px;
+    cursor: pointer;
 `
