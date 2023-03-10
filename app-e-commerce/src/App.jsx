@@ -3,7 +3,6 @@ import { dataProducts } from './components/products/Products'
 import { Header } from './components/header/Header'
 import { Main } from './components/main/Main'
 import { Filter, SortingArray } from './components/filter/Filter'
-import { Test } from './Fla'
 import { CartShop } from './components/cart/CartShop'
 import { PageConfirm } from './components/pageConfirm/PageConfirm'
 
@@ -18,6 +17,8 @@ function App() {
   const [vMax, setvMax] = useState(0)
   const [screen, setScreen] = useState('main')
   const [cart, setCart] = useState([])
+  const [totalItems, setTotalItems] = useState(0)
+  const [totalValue, setTotalValue] = useState(0)
 
   function setFilterIsOn() {
     setIsOn(true)
@@ -46,6 +47,7 @@ function App() {
         setDescription={setDescription}
         setFilterIsOn={setFilterIsOn}
         setScreen={setScreen}
+        totalItems={totalItems}
       />
       {
         screen === 'main' ?
@@ -64,16 +66,25 @@ function App() {
             setFilterIsOn={setFilterIsOn}
             setCart={setCart}
             cart={cart}
+            setTotalItems={setTotalItems}
+            setTotalValue={setTotalValue}
           />
           :
           screen === 'Cart' ?
             <CartShop
               setScreen={setScreen}
               cart={cart}
+              setCart={setCart}
+              totalItems={totalItems}
+              setTotalItems={setTotalItems}
+              totalValue={totalValue}
+              setTotalValue={setTotalValue}
             />
             :
             <PageConfirm
               cart={cart}
+              setCart={setCart}
+              setTotalItems={setTotalItems}
               setScreen={setScreen}
             />
       }

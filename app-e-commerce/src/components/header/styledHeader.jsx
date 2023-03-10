@@ -126,6 +126,20 @@ export const ContainerLogin = styled.div`
         color: white;
     }
     `
+export const ContainerCart = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    `
+export const QtdItemsCart = styled.p`
+    padding: .29rem .5rem;
+    border-radius: 50%;
+    background-color: rgb(169,169,169);
+    color: black;
+    font-weight: 700;
+    font-size: .9rem;
+    `
 
 export const CarImg = styled.img`
     cursor: pointer;

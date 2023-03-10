@@ -3,7 +3,7 @@ import { Card } from "../card/Card"
 import { Container } from "../../Container"
 
 export function Main(props) {
-    const { product, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart } = props
+    const { product, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -62,6 +62,8 @@ export function Main(props) {
                                     key={index}
                                     setCart={setCart}
                                     cart={cart}
+                                    setTotalItems={setTotalItems}
+                                    setTotalValue={setTotalValue}
                                 />
                             )
                         }

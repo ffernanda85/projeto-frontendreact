@@ -2,37 +2,59 @@ import { CardContent, CardText, TitleDiscount, ImgCard, BtnAdd } from "./styledC
 
 
 export function Card(props) {
-    const { codeProduct, discount, descriptionProduct, imageProduct, priceProduct } = props.item
-    const {setCart, cart} = props
+    const { item, setCart, cart, setTotalItems, setTotalValue} = props
 
     function insertItemCart(e) {
-        console.log(e.target.dataset.code)
-        const newItem = {
-            image: e.target.dataset.image,
-            description: e.target.dataset.description,
-            discount: e.target.dataset.discount,
-            price: e.target.dataset.price,
-            amount: 1
+        let copyCart = [...cart]
+        let test = []
+        const codeProduct = e.target.dataset.codeproduct
+        const imageProduct = e.target.dataset.imageproduct
+        const descriptionProduct = e.target.dataset.descriptionproduct
+        const discount = e.target.dataset.discount
+        const priceProduct = e.target.dataset.priceproduct
+                
+         if (copyCart.length) {
+            test = copyCart.filter(item => item.codeProduct === codeProduct)
         }
-        const copyCart = [...cart, newItem]
+       
+        if (!test.length) {
+            copyCart = [...cart,
+                {
+                    codeProduct: codeProduct,
+                    imageProduct: imageProduct,
+                    descriptionProduct: descriptionProduct,
+                    discount: discount,
+                    priceProduct: priceProduct,
+                    amount: 1
+                }
+            ]
+        } else {
+            copyCart = copyCart.map(item => {
+                if (item.codeProduct === codeProduct) {
+                    item.amount += 1
+                }
+                return item
+            })
+        }
         setCart(copyCart)
+        setTotalItems(prevState => prevState + 1)
+        setTotalValue(prevState => +prevState + +priceProduct)
     }
-console.log(cart)
 
     return (
         <CardContent>
-            <ImgCard src={imageProduct} alt={codeProduct} />
+            <ImgCard src={item.imageProduct} alt={item.codeProduct} />
             <CardText>
-                <h4>{descriptionProduct}</h4>
-                <TitleDiscount>De R$ {discount}.00</TitleDiscount>
-                <h3>Por R$ {priceProduct}.00</h3>
+                <h4>{item.descriptionProduct}</h4>
+                <TitleDiscount>De R$ {item.discount}.00</TitleDiscount>
+                <h3>Por R$ {item.priceProduct}.00</h3>
                 <BtnAdd
                     onClick={(e) => insertItemCart(e)}
-                    data-code={codeProduct}
-                    data-image={imageProduct}
-                    data-description={descriptionProduct}
-                    data-discount={discount}
-                    data-price={priceProduct}
+                    data-codeproduct={item.codeProduct}
+                    data-imageproduct={item.imageProduct}
+                    data-descriptionproduct={item.descriptionProduct}
+                    data-discount={item.discount}
+                    data-priceproduct={item.priceProduct}
                 >Adicionar</BtnAdd>
             </CardText>
         </CardContent>
