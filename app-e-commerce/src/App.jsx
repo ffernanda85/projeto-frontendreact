@@ -8,7 +8,7 @@ import { PageConfirm } from './components/pageConfirm/PageConfirm'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
-  const [gender, setGender] = useState('')
+  const [gender, setGender] = useState('todos')
   const [isOn, setIsOn] = useState(false)
   const [description, setDescription] = useState('')
   const [triage, setTriage] = useState('relevance')
@@ -29,7 +29,7 @@ function App() {
   }
 
   if (isOn) {
-    Filter({ setProduct, gender, description, vMin, vMax, setDescription })
+    Filter({ setProduct, gender, description, vMin, vMax, setDescription, setTriage })
     setIsOn(false)
   }
 
@@ -53,6 +53,7 @@ function App() {
         screen === 'main' ?
           <Main
             product={product}
+            setProduct={setProduct}
             qtdProducts={qtdProducts}
             triage={triage}
             setTriage={setTriage}

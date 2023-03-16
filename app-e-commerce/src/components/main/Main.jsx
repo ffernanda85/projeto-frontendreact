@@ -1,9 +1,10 @@
 import { MainContainer, ContentContainer, CardContainer, FilterContainer, SelectContainer, PriceContainer, OrderFilter, InputContainer, InputPrice, LabelPrice, BtnFilter } from "./styledMain"
 import { Card } from "../card/Card"
 import { Container } from "../../Container"
+import { dataProducts } from "../products/Products"
 
 export function Main(props) {
-    const { product, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue } = props
+    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -18,17 +19,33 @@ export function Main(props) {
                         <InputContainer>
                             <LabelPrice>
                                 Mínimo:
-                                <InputPrice type='number' min={25} value={vMin} onChange={(e) => onChangeHandler(e, setvMin)} />
+                                <InputPrice
+                                    type='number'
+                                    min={25}
+                                    value={vMin}
+                                    onChange={(e) => onChangeHandler(e, setvMin)}
+                                    placeholder="valor mín"
+                                />
                             </LabelPrice>
 
                             <LabelPrice>
                                 Máximo:
-                                <InputPrice type='number' min={25} value={vMax} onChange={(e) => onChangeHandler(e, setvMax)} />
+                                <InputPrice
+                                    type='number'
+                                    min={25}
+                                    value={vMax}
+                                    onChange={(e) => onChangeHandler(e, setvMax)}
+                                    placeholder="valor máx"
+                                />
                             </LabelPrice>
                         </InputContainer>
 
                         <BtnFilter onClick={() => setFilterIsOn()}>
                             APLICAR FILTRO
+                        </BtnFilter>
+                        <BtnFilter
+                            onClick={() => { setvMax(0), setvMin(0), setProduct(dataProducts) }}>
+                            LIMPAR FILTRO
                         </BtnFilter>
                     </PriceContainer>
 
