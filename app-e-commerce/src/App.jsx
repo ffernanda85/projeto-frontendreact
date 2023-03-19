@@ -5,6 +5,7 @@ import { Main } from './components/main/Main'
 import { Filter, SortingArray } from './components/filter/Filter'
 import { CartShop } from './components/cart/CartShop'
 import { PageConfirm } from './components/pageConfirm/PageConfirm'
+import { Footer } from './components/footer/Footer'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
@@ -89,7 +90,7 @@ function App() {
               setScreen={setScreen}
             />
       }
-      <footer></footer>
+      <Footer/>
     </body>
   )
 }

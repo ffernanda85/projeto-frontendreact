@@ -2,6 +2,7 @@ import { TitleDiscount } from '../card/styledCard'
 import Remove from '../img/remove.svg'
 import Add from '../img/add.svg'
 import * as s from './styledCartShop'
+import { useEffect } from 'react'
 
 export function ItemCart(props) {
     const { item, setCart, cart, index, setTotalItems, setTotalValue } = props
@@ -10,17 +11,22 @@ export function ItemCart(props) {
 
     function handleBtnDown(e) {
         const index = e.target.dataset.index
+        
         if (copyCart[index].amount === 1) return
         copyCart[index].amount -= 1
+       
         setCart(copyCart)
+        localStorage.cartShop = JSON.stringify(copyCart)
         setTotalItems(prevState => prevState - 1)
         setTotalValue(prevState => prevState - copyCart[index].priceProduct)
     }
 
     function handleBtnUp(e) {
         const index = e.target.dataset.index
+
         copyCart[index].amount += 1
         setCart(copyCart)
+        localStorage.cartShop = JSON.stringify(copyCart)
         setTotalItems(prevState => prevState + 1)
         setTotalValue(prevState => +prevState + +copyCart[index].priceProduct)
     }
@@ -33,6 +39,8 @@ export function ItemCart(props) {
         copyCart = copyCart.filter(item => item.codeProduct !== codeProduct)
 
         setCart(copyCart)
+        localStorage.cartShop = JSON.stringify(copyCart)
+
         setTotalItems(prevState => prevState - amount)
         setTotalValue(prevState => prevState - (amount * priceProduct))
     }

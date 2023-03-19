@@ -5,19 +5,16 @@ export const CardContent = styled.div`
     flex-direction: column;
     align-items: center;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 250px;
     height: 365px;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     color: rgb(64, 64, 64);
 
     :hover {
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transform: scale(1.05);
-    }
-
-    button {
     }
     `
 export const TitleDiscount = styled.h5`

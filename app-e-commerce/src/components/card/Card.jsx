@@ -1,18 +1,42 @@
+import { useEffect } from "react"
 import { CardContent, CardText, TitleDiscount, ImgCard, BtnAdd } from "./styledCard"
 
 
 export function Card(props) {
     const { item, setCart, cart, setTotalItems, setTotalValue} = props
 
+    useEffect(() => {
+        if (localStorage.cartShop) {
+            setCart(JSON.parse(localStorage.cartShop))
+        }
+    }, [])
+
+    useEffect(() => {
+        let totalItems = 0
+        let totalValue = 0
+
+        if (cart.length) {
+            cart.forEach(e => {
+                totalItems += e.amount
+                totalValue += (e.amount * e.priceProduct)
+            });   
+            setTotalItems(totalItems)
+            setTotalValue(totalValue)
+            localStorage.cartShop = JSON.stringify(cart)
+        }
+    }, [cart])
+
     function insertItemCart(e) {
+
         let copyCart = [...cart]
         let test = []
+        
         const codeProduct = e.target.dataset.codeproduct
         const imageProduct = e.target.dataset.imageproduct
         const descriptionProduct = e.target.dataset.descriptionproduct
         const discount = e.target.dataset.discount
         const priceProduct = e.target.dataset.priceproduct
-                
+        
          if (copyCart.length) {
             test = copyCart.filter(item => item.codeProduct === codeProduct)
         }

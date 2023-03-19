@@ -11,7 +11,7 @@ export const GlobalStyled = createGlobalStyle`
     body {
         min-height: 100vh;
         max-width: 100vw;
-        background-color: rgb(220,220,220);
+        /* background-color: rgb(220,220,220); */
     }
 
     #root {

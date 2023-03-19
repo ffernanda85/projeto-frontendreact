@@ -33,11 +33,10 @@ export function PageConfirm(props) {
                         }
                     </s.ContainerProducts>
                     <s.Home onClick={() => {
-                        setScreen('main'),
-                            setCart([]),
-                            setTotalItems(0)
+                        setScreen('main')
                     }}
-                    >Volte Sempre a nossa Loja!</s.Home>
+                    >Volte Sempre a nossa Loja!
+                    </s.Home>
                 </s.ScreenConfirm>
                 :
                 <s.ScreenConfirm>

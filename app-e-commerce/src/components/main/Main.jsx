@@ -45,7 +45,7 @@ export function Main(props) {
                         </BtnFilter>
                         <BtnFilter
                             onClick={() => { setvMax(0), setvMin(0), setProduct(dataProducts) }}>
-                            LIMPAR FILTRO
+                            LIMPAR FILTROS
                         </BtnFilter>
                     </PriceContainer>
 

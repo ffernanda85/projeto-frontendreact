@@ -3,9 +3,10 @@ import { dataProducts } from "../products/Products";
 export function Filter(props) {
     let { gender, setProduct, description, vMin, vMax, setDescription, setTriage } = props
    
-    vMax = +vMax===0?9999999:vMax
+    vMax = +vMax === 0 ? 9999999 : vMax
 
-    let copyProducts = [...dataProducts]    
+    let copyProducts = [...dataProducts]  
+    
     if ( gender !== 'todos') {
         copyProducts = copyProducts.filter(e => e.genderProduct === gender)
     } 
