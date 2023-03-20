@@ -5,7 +5,7 @@ import { TitleDiscount } from "../card/styledCard"
 
 
 export function PageConfirm(props) {
-    const { cart, setCart, setScreen, setTotalItems } = props
+    const { cart, setCart, setScreen, setTotalItems, setClear } = props
 
     return (
         <s.ScreenConfirm>
@@ -34,6 +34,9 @@ export function PageConfirm(props) {
                     </s.ContainerProducts>
                     <s.Home onClick={() => {
                         setScreen('main')
+                        setCart([])
+                        setTotalItems(0)
+                        setClear(true)
                     }}
                     >Volte Sempre a nossa Loja!
                     </s.Home>

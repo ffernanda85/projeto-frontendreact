@@ -20,6 +20,7 @@ function App() {
   const [cart, setCart] = useState([])
   const [totalItems, setTotalItems] = useState(0)
   const [totalValue, setTotalValue] = useState(0)
+  const [clear, setClear] = useState(false)
 
   function setFilterIsOn() {
     setIsOn(true)
@@ -70,6 +71,7 @@ function App() {
             cart={cart}
             setTotalItems={setTotalItems}
             setTotalValue={setTotalValue}
+            clear={clear}
           />
           :
           screen === 'Cart' ?
@@ -88,6 +90,7 @@ function App() {
               setCart={setCart}
               setTotalItems={setTotalItems}
               setScreen={setScreen}
+              setClear={setClear}
             />
       }
       <Footer/>

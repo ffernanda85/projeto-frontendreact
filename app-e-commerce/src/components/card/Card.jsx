@@ -3,7 +3,7 @@ import { CardContent, CardText, TitleDiscount, ImgCard, BtnAdd } from "./styledC
 
 
 export function Card(props) {
-    const { item, setCart, cart, setTotalItems, setTotalValue} = props
+    const { item, setCart, cart, setTotalItems, setTotalValue, clear } = props
 
     useEffect(() => {
         if (localStorage.cartShop) {
@@ -15,7 +15,7 @@ export function Card(props) {
         let totalItems = 0
         let totalValue = 0
 
-        if (cart.length) {
+        if (cart.length || clear) {
             cart.forEach(e => {
                 totalItems += e.amount
                 totalValue += (e.amount * e.priceProduct)

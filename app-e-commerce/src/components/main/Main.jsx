@@ -4,7 +4,7 @@ import { Container } from "../../Container"
 import { dataProducts } from "../products/Products"
 
 export function Main(props) {
-    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue } = props
+    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue, clear } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -81,6 +81,7 @@ export function Main(props) {
                                     cart={cart}
                                     setTotalItems={setTotalItems}
                                     setTotalValue={setTotalValue}
+                                    clear={clear}
                                 />
                             )
                         }
