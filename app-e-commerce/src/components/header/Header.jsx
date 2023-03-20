@@ -5,7 +5,7 @@ import { Container } from "../../Container"
 
 
 export function Header(props) {
-    const { setGender, description, setDescription, setFilterIsOn, setScreen, totalItems } = props
+    const { setGender, description, setDescription, setFilterIsOn, setScreen, screen, totalItems, setClear, setTotalItems, setCart } = props
 
     function selectFilter(e, setState, text) {
         setState(e.target.value)
@@ -14,12 +14,23 @@ export function Header(props) {
         }
     }
 
+    function handleScreen() {
+        if (screen === 'Confirm') {
+            setCart([])
+            setTotalItems(0)
+            setClear(true)
+            setScreen('main')
+        } else {
+            return setScreen('main')
+        }
+    }
+
     return (
         <s.DivAux>
             <Container>
                 <s.ContainerHeader>
                     <s.HeaderTop>
-                        <s.Logo>
+                        <s.Logo onClick={() => handleScreen()} >
                             <s.ImageLogo src='https://img.freepik.com/vetores-gratis/bonito-astronauta-paz-na-lua-com-foguete-desenhos-animados-icone-ilustracao-vetorial-ciencia-tecnologia-icone_138676-5030.jpg?w=2000' />
                             <h1>LabSpace</h1>
                         </s.Logo>

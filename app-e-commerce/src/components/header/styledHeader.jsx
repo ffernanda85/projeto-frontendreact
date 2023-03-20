@@ -5,7 +5,6 @@ export const ContainerHeader = styled.header`
     flex-direction: column;
     color: rgb(64, 64, 64);
 `
-
 export const HeaderTop = styled.div`
     display: flex;
     align-items: center;
@@ -13,14 +12,14 @@ export const HeaderTop = styled.div`
     color: rgb(139,0,139);
     height: 20vh;
     `
-
 export const Logo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5rem;
     padding-top: 1.2rem;
-    
+    cursor: pointer;
+
     h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 2rem;
@@ -35,7 +34,6 @@ export const ImageLogo = styled.img`
     0 0 1em #87F;
     background-color: rgb(139,0,139);
     `
-
 export const HeaderNav = styled.div`
     height: 6vh;
     display: flex;
@@ -68,8 +66,7 @@ export const HeaderNav = styled.div`
             width: 100%;
         }
     }
-    ` 
-
+    `
 export const NavSearch = styled.nav`
     background-color: white;
     border: solid 2px rgb(169,169,169);
@@ -112,7 +109,6 @@ export const NavSearch = styled.nav`
         padding-left: .5rem;
     }
     `
-
 export const ContainerLogin = styled.div`
     display: flex;
     align-items: center;
@@ -140,7 +136,6 @@ export const QtdItemsCart = styled.p`
     font-weight: 700;
     font-size: .9rem;
     `
-
 export const CarImg = styled.img`
     cursor: pointer;
     `

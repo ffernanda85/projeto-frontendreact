@@ -50,6 +50,10 @@ function App() {
         setFilterIsOn={setFilterIsOn}
         setScreen={setScreen}
         totalItems={totalItems}
+        setClear={setClear}
+        screen={screen}
+        setCart={setCart}
+        setTotalItems={setTotalItems}
       />
       {
         screen === 'main' ?
@@ -85,15 +89,18 @@ function App() {
               setTotalValue={setTotalValue}
             />
             :
-            <PageConfirm
-              cart={cart}
-              setCart={setCart}
-              setTotalItems={setTotalItems}
-              setScreen={setScreen}
-              setClear={setClear}
-            />
+            screen === 'Confirm' ?
+              <PageConfirm
+                cart={cart}
+                setCart={setCart}
+                setTotalItems={setTotalItems}
+                setScreen={setScreen}
+                setClear={setClear}
+              />
+              :
+              <p>error</p>
       }
-      <Footer/>
+      <Footer />
     </body>
   )
 }
