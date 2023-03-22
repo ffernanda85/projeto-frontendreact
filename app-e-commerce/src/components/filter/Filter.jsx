@@ -3,7 +3,7 @@ import { dataProducts } from "../products/Products";
 export function Filter(props) {
     let { gender, setProduct, description, vMin, vMax, setDescription, setTriage } = props
    
-    vMax = +vMax === 0 ? 9999999 : vMax
+    vMax = +vMax === 0 ? Infinity : vMax
 
     let copyProducts = [...dataProducts]  
     
@@ -38,3 +38,11 @@ export function SortingArray(arrayProducts, type) {
         return arrayProducts.sort((a, b) => +b.codeProduct - +a.codeProduct)
     }
 }
+
+export function currencyBrazilValue (value, symbol) {
+    if (!value) return null
+    if (symbol) {
+      return value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    }
+    return value.toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }

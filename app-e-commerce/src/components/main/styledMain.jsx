@@ -6,6 +6,7 @@ export const MainContainer = styled.main`
     min-height: 120vh;
     font-family: 'Roboto', sans-serif;
     color: rgb(64, 64, 64);
+    margin-bottom: 5rem;
 `
 export const ContentContainer = styled.div`
     display: flex;
@@ -51,6 +52,9 @@ export const PriceContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+   /*  position: fixed;
+    top: 47vh;
+    bottom: 100vh; */
 `
 export const InputContainer = styled.div`
     display: flex;

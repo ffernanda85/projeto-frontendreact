@@ -76,6 +76,7 @@ function App() {
             setTotalItems={setTotalItems}
             setTotalValue={setTotalValue}
             clear={clear}
+            setDescription={setDescription}
           />
           :
           screen === 'Cart' ?

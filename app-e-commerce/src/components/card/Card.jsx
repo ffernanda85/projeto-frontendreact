@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { CardContent, CardText, TitleDiscount, ImgCard, BtnAdd } from "./styledCard"
+import * as s from "./styledCard"
 
 
 export function Card(props) {
@@ -66,21 +66,21 @@ export function Card(props) {
     }
 
     return (
-        <CardContent>
-            <ImgCard src={item.imageProduct} alt={item.codeProduct} />
-            <CardText>
+        <s.CardContent>
+            <s.ImgCard src={item.imageProduct} alt={item.codeProduct} />
+            <s.CardText>
                 <h4>{item.descriptionProduct}</h4>
-                <TitleDiscount>De R$ {item.discount}.00</TitleDiscount>
+                <s.TitleDiscount>De R$ {item.discount}.00</s.TitleDiscount>
                 <h3>Por R$ {item.priceProduct}.00</h3>
-                <BtnAdd
+                <s.BtnAdd
                     onClick={(e) => insertItemCart(e)}
                     data-codeproduct={item.codeProduct}
                     data-imageproduct={item.imageProduct}
                     data-descriptionproduct={item.descriptionProduct}
                     data-discount={item.discount}
                     data-priceproduct={item.priceProduct}
-                >Adicionar</BtnAdd>
-            </CardText>
-        </CardContent>
+                >Adicionar</s.BtnAdd>
+            </s.CardText>
+        </s.CardContent>
     )
 }

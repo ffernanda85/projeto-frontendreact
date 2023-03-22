@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
+export const ContainerAux = styled.div`
+    min-height: 105vh;    
+`
 export const CartShopContainer = styled.div`
     color: rgb(74,74,74);
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
-    /* background-color: #C0C0C0; */
-    height: 60vh;
-    transform: translate(0, 15%);
+    height: 72vh;
+    transform: translate(0, 22%);
 `
 export const BasketContainer = styled.div`
     padding-left: 1rem;

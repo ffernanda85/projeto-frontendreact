@@ -1,10 +1,10 @@
-import { MainContainer, ContentContainer, CardContainer, FilterContainer, SelectContainer, PriceContainer, OrderFilter, InputContainer, InputPrice, LabelPrice, BtnFilter } from "./styledMain"
+import * as s from "./styledMain"
 import { Card } from "../card/Card"
 import { Container } from "../../Container"
 import { dataProducts } from "../products/Products"
 
 export function Main(props) {
-    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, totalItems, setTotalItems, totalValue, setTotalValue, clear } = props
+    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, setTotalItems, setTotalValue, setDescription, clear } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -12,49 +12,49 @@ export function Main(props) {
 
     return (
         <Container>
-            <MainContainer>
-                <FilterContainer>
-                    <PriceContainer>
+            <s.MainContainer>
+                <s.FilterContainer>
+                    <s.PriceContainer>
                         <h4>Preço</h4>
-                        <InputContainer>
-                            <LabelPrice>
+                        <s.InputContainer>
+                            <s.LabelPrice>
                                 Mínimo:
-                                <InputPrice
+                                <s.InputPrice
                                     type='number'
                                     min={25}
                                     value={vMin}
                                     onChange={(e) => onChangeHandler(e, setvMin)}
-                                    placeholder="valor mín"
+                                    placeholder='valor mín'
                                 />
-                            </LabelPrice>
+                            </s.LabelPrice>
 
-                            <LabelPrice>
+                            <s.LabelPrice>
                                 Máximo:
-                                <InputPrice
+                                <s.InputPrice
                                     type='number'
                                     min={25}
                                     value={vMax}
                                     onChange={(e) => onChangeHandler(e, setvMax)}
                                     placeholder="valor máx"
                                 />
-                            </LabelPrice>
-                        </InputContainer>
+                            </s.LabelPrice>
+                        </s.InputContainer>
 
-                        <BtnFilter onClick={() => setFilterIsOn()}>
+                        <s.BtnFilter onClick={() => setFilterIsOn()}>
                             APLICAR FILTRO
-                        </BtnFilter>
-                        <BtnFilter
-                            onClick={() => { setvMax(0), setvMin(0), setProduct(dataProducts) }}>
+                        </s.BtnFilter>
+                        <s.BtnFilter
+                            onClick={() => { setvMax(0), setvMin(0), setProduct(dataProducts), setTriage('relevance'), setDescription('') }}>
                             LIMPAR FILTROS
-                        </BtnFilter>
-                    </PriceContainer>
+                        </s.BtnFilter>
+                    </s.PriceContainer>
 
-                </FilterContainer>
+                </s.FilterContainer>
 
-                <ContentContainer>
-                    <SelectContainer>
+                <s.ContentContainer>
+                    <s.SelectContainer>
                         <h4>Produtos Disponiveis: {qtdProducts()}</h4>
-                        <OrderFilter>
+                        <s.OrderFilter>
                             <p>Ordenar</p>
 
                             <select
@@ -68,10 +68,10 @@ export function Main(props) {
                                 <option value='down'>Menor Preço</option>
                                 <option value='up'>Maior Preço</option>
                             </select>
-                        </OrderFilter>
-                    </SelectContainer>
+                        </s.OrderFilter>
+                    </s.SelectContainer>
 
-                    <CardContainer>
+                    <s.CardContainer>
                         {
                             product.map((item,index) =>
                                 <Card
@@ -85,10 +85,10 @@ export function Main(props) {
                                 />
                             )
                         }
-                    </CardContainer>
-                </ContentContainer>
+                    </s.CardContainer>
+                </s.ContentContainer>
 
-            </MainContainer>
+            </s.MainContainer>
         </Container>
     )
 }

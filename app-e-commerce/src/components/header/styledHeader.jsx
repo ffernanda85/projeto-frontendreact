@@ -10,7 +10,7 @@ export const HeaderTop = styled.div`
     align-items: center;
     justify-content: space-between;
     color: rgb(139,0,139);
-    height: 20vh;
+    height: 30vh;
     `
 export const Logo = styled.div`
     display: flex;
@@ -35,7 +35,8 @@ export const ImageLogo = styled.img`
     background-color: rgb(139,0,139);
     `
 export const HeaderNav = styled.div`
-    height: 6vh;
+    height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -53,11 +54,11 @@ export const HeaderNav = styled.div`
         ::after {
             content: ' ';
             width: 0;
-            height: .3rem;
+            height: .1rem;
             background-color: rgb(139,139,139);
             border-radius: 10px;
             position: absolute;
-            top: 2.2rem;
+            top: 3.5rem;
             left: 0;
             transition: all .3s ease-in-out;
         }
@@ -129,17 +130,17 @@ export const ContainerCart = styled.div`
     gap: .5rem;
     `
 export const QtdItemsCart = styled.p`
-    padding: .29rem .5rem;
+    padding: .2rem .4rem;
     border-radius: 50%;
-    background-color: rgb(169,169,169);
+    background-color: white;
     color: black;
-    font-weight: 700;
     font-size: .9rem;
     `
 export const CarImg = styled.img`
+    width: 32px;
     cursor: pointer;
     `
 export const DivAux = styled.div`
     background-color: rgb(0,0,0);
-    
+    width: 100%;
     `

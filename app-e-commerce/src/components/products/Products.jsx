@@ -1,7 +1,7 @@
 export const dataProducts = [
     {
         codeProduct: '001',
-        descriptionProduct: 'Astronauta Apaixonado',
+        descriptionProduct: 'Astronauta Apaixonado Masculina',
         genderProduct: 'masculino',
         discount: 99,
         priceProduct: 50,
@@ -46,7 +46,7 @@ export const dataProducts = [
 
     {
         codeProduct: '006',
-        descriptionProduct: 'Camisa O Gato e o ET',
+        descriptionProduct: 'Camisa Preta O Gato e O ET',
         genderProduct: 'masculino',
         discount: 100,
         priceProduct: 77,
@@ -74,7 +74,7 @@ export const dataProducts = [
 
     {
         codeProduct: '009',
-        descriptionProduct: 'Camisa Universo',
+        descriptionProduct: 'Camisa Masculina Universo',
         genderProduct: 'masculino',
         discount: 99,
         priceProduct: 55,
@@ -92,7 +92,7 @@ export const dataProducts = [
 
     {
         codeProduct: '011',
-        descriptionProduct: 'Macacão Astronauta',
+        descriptionProduct: 'Macacão Pequeno Astronauta',
         genderProduct: 'infantil',
         discount: 102,
         priceProduct: 77,
@@ -110,7 +110,7 @@ export const dataProducts = [
 
     {
         codeProduct: '013',
-        descriptionProduct: 'Camisa Sistema Solar',
+        descriptionProduct: 'Camisa Preta Sistema Solar',
         genderProduct: 'masculino',
         discount: 60,
         priceProduct: 46,
@@ -119,7 +119,7 @@ export const dataProducts = [
 
     {
         codeProduct: '014',
-        descriptionProduct: 'Macacão Infantil',
+        descriptionProduct: 'Macacão Azul e Branco Infantil',
         genderProduct: 'infantil',
         discount: 500,
         priceProduct: 300,
@@ -128,7 +128,7 @@ export const dataProducts = [
 
     {
         codeProduct: '015',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Com Gravata Infantil',
         genderProduct: 'infantil',
         discount: 300,
         priceProduct: 150,
@@ -137,7 +137,7 @@ export const dataProducts = [
 
     {
         codeProduct: '016',
-        descriptionProduct: 'Camisa Branca',
+        descriptionProduct: 'Camisa Astronauta Branca',
         genderProduct: 'masculino',
         discount: 320,
         priceProduct: 100,
@@ -164,7 +164,7 @@ export const dataProducts = [
 
     {
         codeProduct: '019',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Astronauta Rosa Infantil',
         genderProduct: 'infantil',
         discount: 50,
         priceProduct: 35,
@@ -173,7 +173,7 @@ export const dataProducts = [
     
     {
         codeProduct: '020',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Nasa Cinza Infantil',
         genderProduct: 'infantil',
         discount: 90,
         priceProduct: 75,
@@ -182,7 +182,7 @@ export const dataProducts = [
 
     {
         codeProduct: '021',
-        descriptionProduct: 'Camisa Infantil',
+        descriptionProduct: 'Camisa Astronauta Balões Infantil',
         genderProduct: 'infantil',
         discount: 75,
         priceProduct: 30,
@@ -200,7 +200,7 @@ export const dataProducts = [
 
     {
         codeProduct: '023',
-        descriptionProduct: 'Camisa Branca',
+        descriptionProduct: 'BabyLook Feminina Branca',
         genderProduct: 'feminino',
         discount: 80,
         priceProduct: 50,
@@ -209,7 +209,7 @@ export const dataProducts = [
 
     {
         codeProduct: '024',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 300,
         priceProduct: 250,
@@ -218,7 +218,7 @@ export const dataProducts = [
 
     {
         codeProduct: '025',
-        descriptionProduct: 'Self Astronauta',
+        descriptionProduct: 'Self Astronauta Masculina',
         genderProduct: 'masculino',
         discount: 100,
         priceProduct: 75,
@@ -227,7 +227,7 @@ export const dataProducts = [
 
     {
         codeProduct: '026',
-        descriptionProduct: 'Camisa Feminina',
+        descriptionProduct: 'Camisa Branca Feminina Astronauta',
         genderProduct: 'feminino',
         discount: 120,
         priceProduct: 80,
@@ -236,7 +236,7 @@ export const dataProducts = [
 
     {
         codeProduct: '027',
-        descriptionProduct: 'Camisa Astronauta',
+        descriptionProduct: 'Camisa Masculina Astronauta',
         genderProduct: 'masculino',
         discount: 200,
         priceProduct: 99,
@@ -245,7 +245,7 @@ export const dataProducts = [
 
     {
         codeProduct: '028',
-        descriptionProduct: 'Camisa Foguete',
+        descriptionProduct: 'Camisa Infantil Foguete Branca',
         genderProduct: 'infantil',
         discount: 110,
         priceProduct: 80,
@@ -254,7 +254,7 @@ export const dataProducts = [
 
     {
         codeProduct: '029',
-        descriptionProduct: 'Camisa Mini Astronauta',
+        descriptionProduct: 'Camisa Branca Mini Astronauta',
         genderProduct: 'infantil',
         discount: 60,
         priceProduct: 40,
@@ -263,7 +263,7 @@ export const dataProducts = [
 
     {
         codeProduct: '030',
-        descriptionProduct: 'Conjunto Infantil',
+        descriptionProduct: 'Conjunto Short e Blusa Infantil',
         genderProduct: 'infantil',
         discount: 120,
         priceProduct: 90,
@@ -272,7 +272,7 @@ export const dataProducts = [
 
     {
         codeProduct: '031',
-        descriptionProduct: 'Moletom Masculino',
+        descriptionProduct: 'Moletom Azul e Preto Masculino',
         genderProduct: 'masculino',
         discount: 180,
         priceProduct: 99,
@@ -281,7 +281,7 @@ export const dataProducts = [
 
     {
         codeProduct: '032',
-        descriptionProduct: 'Regata OVNI',
+        descriptionProduct: 'Regata Masculina OVNI Preta',
         genderProduct: 'regata',
         discount: 40,
         priceProduct: 28,
@@ -290,7 +290,7 @@ export const dataProducts = [
 
     {
         codeProduct: '033',
-        descriptionProduct: 'Regata Animação',
+        descriptionProduct: 'Regata Masculina Animação',
         genderProduct: 'regata',
         discount: 40,
         priceProduct: 25,
@@ -299,7 +299,7 @@ export const dataProducts = [
 
     {
         codeProduct: '034',
-        descriptionProduct: 'Regata OVNI Cinza',
+        descriptionProduct: 'Regata Masculina OVNI Cinza',
         genderProduct: 'regata',
         discount: 40,
         priceProduct: 28,
@@ -308,7 +308,7 @@ export const dataProducts = [
 
     {
         codeProduct: '035',
-        descriptionProduct: 'Conj. Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 400,
         priceProduct: 220,
@@ -317,7 +317,7 @@ export const dataProducts = [
 
     {
         codeProduct: '036',
-        descriptionProduct: 'Conj. Camisa+Short Fem',
+        descriptionProduct: 'Conjunto Camisa+Short Fem',
         genderProduct: 'feminino',
         discount: 100,
         priceProduct: 78,
@@ -326,7 +326,7 @@ export const dataProducts = [
 
     {
         codeProduct: '037',
-        descriptionProduct: 'Conj. Camisa+Calça Fem',
+        descriptionProduct: 'Conjunto Camisa+Calça Fem',
         genderProduct: 'feminino',
         discount: 300,
         priceProduct: 190,
@@ -335,7 +335,7 @@ export const dataProducts = [
 
     {
         codeProduct: '038',
-        descriptionProduct: 'Conj. Camisa+Saia Fem',
+        descriptionProduct: 'Conjunto Camisa+Saia Fem',
         genderProduct: 'feminino',
         discount: 350,
         priceProduct: 250,
@@ -344,7 +344,7 @@ export const dataProducts = [
 
     {
         codeProduct: '039',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 700,
         priceProduct: 500,
@@ -353,7 +353,7 @@ export const dataProducts = [
 
     {
         codeProduct: '040',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 500,
         priceProduct: 450,
@@ -362,7 +362,7 @@ export const dataProducts = [
 
     {
         codeProduct: '041',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 800,
         priceProduct: 680,
@@ -371,7 +371,7 @@ export const dataProducts = [
 
     {
         codeProduct: '042',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 600,
         priceProduct: 385,
@@ -380,7 +380,7 @@ export const dataProducts = [
     
     {
         codeProduct: '043',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 560,
         priceProduct: 499,
@@ -389,7 +389,7 @@ export const dataProducts = [
 
     {
         codeProduct: '044',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
         discount: 730,
         priceProduct: 600,
@@ -398,10 +398,10 @@ export const dataProducts = [
 
     {
         codeProduct: '045',
-        descriptionProduct: 'Conjunto Feminino',
+        descriptionProduct: 'Conjunto Completo Feminino',
         genderProduct: 'feminino',
-        discount: 550,
-        priceProduct: 500,
+        discount: 800,
+        priceProduct: 700,
         imageProduct: 'https://uploaddeimagens.com.br/images/004/356/824/full/web11.jpg?1676605213'
     }  
 
