@@ -54,7 +54,6 @@ function App() {
         screen={screen}
         setCart={setCart}
         setTotalItems={setTotalItems}
-        gender={gender}
       />
       {
         screen === 'main' ?
