@@ -4,7 +4,7 @@ import { Container } from "../../Container"
 import { dataProducts } from "../products/Products"
 
 export function Main(props) {
-    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, setTotalItems, setTotalValue, setDescription, clear } = props
+    const { product, setProduct, qtdProducts, triage, setTriage, setIsOnTriage, vMax, vMin, setvMax, setvMin, setFilterIsOn, setCart, cart, setTotalItems, setTotalValue, setDescription, clear, gender, setGender } = props
 
     function onChangeHandler(e, setState) {
         setState(e.target.value)
@@ -44,7 +44,7 @@ export function Main(props) {
                             APLICAR FILTRO
                         </s.BtnFilter>
                         <s.BtnFilter
-                            onClick={() => { setvMax(0), setvMin(0), setProduct(dataProducts), setTriage('relevance'), setDescription('') }}>
+                            onClick={() => { setvMax(Infinity), setvMin(-Infinity), setProduct(dataProducts), setTriage('relevance'), setDescription(''), setGender('Todos os Produtos') }}>
                             LIMPAR FILTROS
                         </s.BtnFilter>
                     </s.PriceContainer>
@@ -53,7 +53,10 @@ export function Main(props) {
 
                 <s.ContentContainer>
                     <s.SelectContainer>
-                        <h4>Produtos Disponiveis: {qtdProducts()}</h4>
+                        <s.TitleProductsAmount>
+                            <h3>{gender}</h3>
+                            <p>Produtos Disponiveis: { qtdProducts() < 10 ? '0'+qtdProducts() : qtdProducts() }</p>
+                        </s.TitleProductsAmount>
                         <s.OrderFilter>
                             <p>Ordenar</p>
 
@@ -73,7 +76,7 @@ export function Main(props) {
 
                     <s.CardContainer>
                         {
-                            product.map((item,index) =>
+                            product.map((item, index) =>
                                 <Card
                                     item={item}
                                     key={index}

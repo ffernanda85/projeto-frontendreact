@@ -7,7 +7,7 @@ export const CardContent = styled.div`
     border: none;
     border-radius: 5px;
     width: 200px;
-    height: 280px;
+    height: 300px;
     background-color: white;
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     color: rgb(64, 64, 64);
@@ -43,7 +43,7 @@ export const ImgCard = styled.img`
     border-radius: 8px;
     `
 export const BtnAdd = styled.button`
-    width: 130px;
+    width: 185px;
     font-size: 1rem;
     font-weight: bold;
     border: none;
@@ -51,7 +51,7 @@ export const BtnAdd = styled.button`
     background-color: rgb(64, 64, 64);
     color: white;
     cursor: pointer;
-    line-height: 1rem;
+    padding: .5rem;
 
     :active {
         opacity: .7;

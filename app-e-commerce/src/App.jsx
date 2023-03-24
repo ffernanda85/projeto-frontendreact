@@ -9,13 +9,13 @@ import { Footer } from './components/footer/Footer'
 
 function App() {
   const [product, setProduct] = useState(dataProducts)
-  const [gender, setGender] = useState('todos')
+  const [gender, setGender] = useState('Todos os Produtos')
   const [isOn, setIsOn] = useState(false)
   const [description, setDescription] = useState('')
   const [triage, setTriage] = useState('relevance')
   const [isOnTriage, setIsOnTriage] = useState(false)
-  const [vMin, setvMin] = useState(0)
-  const [vMax, setvMax] = useState(0)
+  const [vMin, setvMin] = useState(-Infinity)
+  const [vMax, setvMax] = useState(Infinity)
   const [screen, setScreen] = useState('main')
   const [cart, setCart] = useState([])
   const [totalItems, setTotalItems] = useState(0)
@@ -54,6 +54,7 @@ function App() {
         screen={screen}
         setCart={setCart}
         setTotalItems={setTotalItems}
+        gender={gender}
       />
       {
         screen === 'main' ?
@@ -77,6 +78,8 @@ function App() {
             setTotalValue={setTotalValue}
             clear={clear}
             setDescription={setDescription}
+            gender={gender}
+            setGender={setGender}
           />
           :
           screen === 'Cart' ?

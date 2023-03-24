@@ -52,9 +52,6 @@ export const PriceContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   /*  position: fixed;
-    top: 47vh;
-    bottom: 100vh; */
 `
 export const InputContainer = styled.div`
     display: flex;
@@ -86,5 +83,16 @@ export const BtnFilter = styled.button`
 
     :active {
         opacity: .7;
+    }
+`
+export const TitleProductsAmount = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+    color: rgb(139,139,139);
+    /* font-weight: 700; */
+    h3{
+        font-size: 1.5rem;
     }
 `

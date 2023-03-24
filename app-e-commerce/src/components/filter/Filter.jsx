@@ -7,15 +7,13 @@ export function Filter(props) {
 
     let copyProducts = [...dataProducts]  
     
-    if ( gender !== 'todos') {
+    if ( gender !== 'Todos os Produtos') {
         copyProducts = copyProducts.filter(e => e.genderProduct === gender)
     } 
 
-    if (vMax > 0 && vMin >= 0) {
         copyProducts = copyProducts.filter(e =>
             e.priceProduct >= +vMin && e.priceProduct <= +vMax
         )
-    }
 
     if (description && description.length > 0) {
         copyProducts = copyProducts.filter(e => e.descriptionProduct.toLowerCase().includes(description.toLowerCase()))

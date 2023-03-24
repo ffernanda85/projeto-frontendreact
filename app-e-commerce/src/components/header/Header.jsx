@@ -5,12 +5,18 @@ import { Container } from "../../Container"
 
 
 export function Header(props) {
-    const { setGender, description, setDescription, setFilterIsOn, setScreen, screen, totalItems, setClear, setTotalItems, setCart } = props
+    const { gender, setGender, description, setDescription, setFilterIsOn, setScreen, screen, totalItems, setClear, setTotalItems, setCart, typeGender } = props
 
     function selectFilter(e, setState, text) {
         setState(e.target.value)
+
         if (!text) {
-            setFilterIsOn()
+            if (screen !== 'main') {
+                handleScreen()
+                setFilterIsOn()
+            } else {
+                setFilterIsOn()
+            }
         }
     }
 
@@ -36,7 +42,7 @@ export function Header(props) {
                         </s.Logo>
                         <s.NavSearch>
                             <img src='https://uploaddeimagens.com.br/images/004/351/164/full/585e4ae1cb11b227491c3393.png?1676184119' alt="" />
-                            <input placeholder="procure o produto desejado..." value={description} onChange={(e) => selectFilter(e, setDescription, 'name')} />
+                            <input placeholder="procure o produto desejado..." value={description} onChange={(e) => selectFilter(e, setDescription, 'name')} onKeyDown={ (e) => e.key === 'Enter' ? setFilterIsOn() : ''} />
                             <button onClick={() => setFilterIsOn()}>Buscar</button>
                         </s.NavSearch>
 
@@ -51,11 +57,11 @@ export function Header(props) {
 
                     </s.HeaderTop>
                     <s.HeaderNav>
-                        <button value='todos' onClick={(e) => selectFilter(e, setGender)}>Todos os Produtos</button>
-                        <button value='masculino' onClick={(e) => selectFilter(e, setGender)}>Moda Masculina</button>
-                        <button value='feminino' onClick={(e) => selectFilter(e, setGender)}>Moda Feminina</button>
-                        <button value='infantil' onClick={(e) => selectFilter(e, setGender)}>Moda Infantil</button>
-                        <button value='regata' onClick={(e) => selectFilter(e, setGender)}>Camisetas Regata</button>
+                        <button value='Todos os Produtos' onClick={(e) => selectFilter(e, setGender)}>Todos os Produtos</button>
+                        <button value='Moda Masculina' onClick={(e) => selectFilter(e, setGender)}>Moda Masculina</button>
+                        <button value='Moda Feminina' onClick={(e) => selectFilter(e, setGender)}>Moda Feminina</button>
+                        <button value='Moda Infantil' onClick={(e) => selectFilter(e, setGender)}>Moda Infantil</button>
+                        <button value='Camisetas Regata' onClick={(e) => selectFilter(e, setGender)}>Camisetas Regata</button>
                     </s.HeaderNav>
                 </s.ContainerHeader>
             </Container>

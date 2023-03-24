@@ -70,8 +70,8 @@ export function Card(props) {
             <s.ImgCard src={item.imageProduct} alt={item.codeProduct} />
             <s.CardText>
                 <h4>{item.descriptionProduct}</h4>
-                <s.TitleDiscount>De R$ {item.discount}.00</s.TitleDiscount>
-                <h3>Por R$ {item.priceProduct}.00</h3>
+                <s.TitleDiscount>De R$ {item.discount},00</s.TitleDiscount>
+                <h3>Por R$ {item.priceProduct},00</h3>
                 <s.BtnAdd
                     onClick={(e) => insertItemCart(e)}
                     data-codeproduct={item.codeProduct}

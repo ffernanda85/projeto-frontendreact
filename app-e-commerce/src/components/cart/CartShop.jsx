@@ -17,7 +17,7 @@ export function CartShop(props) {
                                 <p>descrição</p>
                                 <p>quantidade</p>
                                 <p>entrega</p>
-                                <p>preço</p>
+                                <p>preço unidade</p>
                             </s.SubtitleContainer>
                             <s.HorizontalLine />
                             <div>
@@ -42,7 +42,7 @@ export function CartShop(props) {
                         <s.DetailsValue>
                             {totalItems > 1 ? <p>0{totalItems} produtos</p> : <p>0{totalItems} produto</p>}
 
-                            <p>R$ {totalValue}.00</p>
+                            <p>R$ {totalValue},00</p>
                         </s.DetailsValue>
                         <s.DetailsValue>
                             <p>frete</p>
@@ -51,7 +51,7 @@ export function CartShop(props) {
                         <s.HorizontalLine />
                         <s.DetailsValue>
                             <h4>total</h4>
-                            <h4>R$ {totalValue}.00</h4>
+                            <h4>R$ {totalValue},00</h4>
                         </s.DetailsValue>
                         <s.HorizontalLine />
                         <s.BtnCloserCart onClick={() => setScreen('Confirm')}>Confirmar Compra</s.BtnCloserCart>
