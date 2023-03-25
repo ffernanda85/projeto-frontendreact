@@ -1,6 +1,6 @@
 # projeto-frontendreact
 
-Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar a estrutura do que consideramos a estrutura do React. O objetivo é que funcione como o front-end de um E-Commerce
+LabSpace é um projeto de Introdução ao React JS e o seu objetivo é que funcione como o front-end de um E-Commerce, seguindo uma lista de pré-requisitos e exigências. Para esse projeto utilizei as seguintes tecnologias:
 
 - JSX
 - Componentes
@@ -11,113 +11,92 @@ Esse é o projeto de introdução aos fundamentos do React. Aqui, vamos praticar
 - Renderização condicional
 - localStorage
 
-## Instruções
+## 🔗Link de Acesso
+- Deploy Surge: [clique aqui!](https://flavia-santos-e-commerce.surge.sh/).
 
-O Astrodev deixou um testamento e essa foi a herança deixada pra vocês:
+## 📄Concepção do Projeto
 
-```
-Estudantes do meu coração,
-Estou querendo montar um e-commerce de itens espaciais e vocês serão responsáveis por essa construção. 
-Pretendo montar diferentes linhas de produtos. 
+### Criação
+ - Foi utilizado o VITE
+  
+### Instalando
+```bash
+# Instalando dependências
+npm install
 
-As possíveis linhas de produto são:
-- Satélites antigos;
-- Roupas espaciais;
-- Camisetas com estampas divertidas relacionadas ao espaço;
-- Viagens espaciais;
-- Meteoritos / aerolitos como pedras preciosas;
-- Brinquedos e produtos infantis temáticos;
-- Naves / Foguetes / Ônibus espaciais;
-
-Escolham uma linha dentre essas, e criem um e-commerce de acordo com a lista de requisitos.
-
-
-Att.
+# executando o projeto
+npm run dev
 ```
 
-# Requisitos
+### Layout Desktop
 
-O projeto consistirá em 3 grandes partes:
+![image](https://uploaddeimagens.com.br/images/004/406/403/thumb/home.png?1679701503)
+![image](https://uploaddeimagens.com.br/images/004/406/404/thumb/cart.png?1679701514)
+![image](https://uploaddeimagens.com.br/images/004/406/405/thumb/confirm.png?1679701526)
+
+### Requisitos do Projeto / Funcionalidades
+```bash
+O projeto consiste em 3 grandes partes:
 
 1. Home
     - Mostrando todos os produtos
     - Deve haver alguma forma de ordenar os produtos por ordem crescente ou decrescente de preço (pode ser na home em si ou junto dos filtros)
     - Produtos:
         - Devem ter um botão que permita adicioná-los ao carrinho
-        - Devem exibir o nome, preço e imagem em um card
+        - Devem exibir o nome, preço e imagem em um card	
+        
 2. Carrinho
     - Mostrar todos os produtos e quantidades adicionadas
     - Capacidade de remover itens do carrinho
-    - Mostrar o valor total do carrinho
+    - Mostrar o valor total do carrinho   
+      
 3. Filtro
     - Por valor mínimo e máximo
     - Por nome do produto
 
-Exemplo de estruturação de **UM** produto (Lembrem-se que vocês terão uma lista contendo todos):
-
-```jsx
-{
-	id: 1,
-	name: "Foguete da Missão Apollo 11",
-	value: 10000.0,
-	imageUrl: "https://picsum.photos/200/200",
-}
+- Home (Lista de Produtos)
+    - [x]  O usuário deve ser capaz de visualizar uma lista de produtos
+    - [x]  O usuário deve ser capaz de visualizar os dados do produto (nome, preço e imagem)
+    - [x]  O usuário deve ser capaz de adicionar um produto no carrinho    
+- Carrinho
+    - [x]  O usuário deve ser capaz de visualizar os produtos adicionados
+    - [x]  O usuário deve ser capaz de visualizar a quantidade correta de cada produto
+    - [x]  O usuário deve ser capaz de remover itens do carrinho
+    - [x]  O usuário deve ser capaz de ver corretamente o valor total de sua compra
+    - [x]  Quando a página é atualizada, os itens devem continuar no carrinho    
+- Filtros e Ordenação
+    - [x]  O usuário deve ser capaz de filtrar os itens por preço mínimo
+    - [x]  O usuário deve ser capaz de filtrar os itens por preço máximo
+    - [x]  O usuário deve ser capaz de realizar uma busca por nome
+    - [x]  O usuário deve ser capaz de ordenar os itens em ordem crescente ou decrescente
+    - [x]  O usuário deve ser capaz de adicionar  filtros, busca e ordenação simultaneamente
+    - [x]  O usuário deve ser capaz de retornar à visualização sem filtros
 ```
 
-### Lista de Requisitos
-- Home (Lista de Produtos)
-    - [ ]  O usuário deve ser capaz de visualizar uma lista de produtos
-    - [ ]  O usuário deve ser capaz de visualizar os dados do produto (nome, preço e imagem)
-    - [ ]  O usuário deve ser capaz de adicionar um produto no carrinho
-- Carrinho
-    - [ ]  O usuário deve ser capaz de visualizar os produtos adicionados
-    - [ ]  O usuário deve ser capaz de visualizar a quantidade correta de cada produto
-    - [ ]  O usuário deve ser capaz de remover itens do carrinho
-    - [ ]  O usuário deve ser capaz de ver corretamente o valor total de sua compra
-    - [ ]  Quando a página é atualizada, os itens devem continuar no carrinho
-- Filtros e Ordenação
-    - [ ]  O usuário deve ser capaz de filtrar os itens por preço mínimo
-    - [ ]  O usuário deve ser capaz de filtrar os itens por preço máximo
-    - [ ]  O usuário deve ser capaz de realizar uma busca por nome
-    - [ ]  O usuário deve ser capaz de ordenar os itens em ordem crescente ou decrescente
-    - [ ]  O usuário deve ser capaz de adicionar  filtros, busca e ordenação simultaneamente
-    - [ ]  O usuário deve ser capaz de retornar à visualização sem filtros
+### Funcionalidades que Adicionei
+    - [x]  Filtro por Categoria (permite escolher um grupo de produtos)
     
- ### 
+ ## *** desafios *** 
+   - [x]  Salvar e Recuperar conteúdo do carrinho usando o `LocalStorage`;
 
-O layout da página é escolha de vocês! O exemplo abaixo é só uma implementação bemmm simples das funcionalidades, não se atenham a ele.
+### Bibliotecas Utilizadas
 
-http://fluttering-coast.surge.sh/
- 
+```bash
+styled-components
+```
 
-https://user-images.githubusercontent.com/11279432/197185533-14582ca3-9eb0-4a5a-b57c-b94913ff2dd6.mp4
+## 💡Programas utilizados:
+- VSCode
+- Photoshop (edição da imagens)
 
+## 💻Tecnologias 
 
+![HTML](https://user-images.githubusercontent.com/106079184/227619911-eb73aabd-7739-47c0-bbcb-e0920902ead3.png)
+![Javascript](https://user-images.githubusercontent.com/106079184/227620446-5307c4f2-0af2-4b7d-8696-a17780a13148.png)
+![React](https://user-images.githubusercontent.com/106079184/227620813-6e3311e8-9992-407a-8cae-abf2711f1af8.png)
+![Styled-Components](https://user-images.githubusercontent.com/106079184/227621509-7956f644-df78-41b1-a26d-ec88112b7de1.png)
+![Git](https://user-images.githubusercontent.com/106079184/227621865-d6fd9ff4-2e10-4f7f-9759-f31c6434b565.png)
 
-    
-  ### Conseguiu terminar? Aqui temos alguns **desafios**
-  1. Salvar e Recuperar conteúdo do carrinho usando o `LocalStorage`;
-  2. Dediquem um tempo para melhorar o layout e a usabilidade do seu site! Se baseiem em outros e-commerces que vocês gostam para chegar em um resultado   mais próximo do padrão de design visto no mercado;
-  3. Se TODO O RESTO DO SITE  e os dois desafios anteriores estiverem funcionando, pensem: qual outra funcionalidade está faltando? Decidam o que vocês concordam que poderia ser uma boa adição à loja virtual (pode ser qualquer funcionalidade, desde que vocês consigam implementá-la). Todas as funcionalidades extras implementadas devem ser listadas e explicadas no readme do projeto para que possam ser avaliadas.
-  
-  ### Instruções de entrega
-
-- Faça o fork desse repositório e realize o clone da sua cópia `seu-nome-de-usuario/projeto-intro-web`.
-   <details>
-   <summary>Quer uma dica?</summary>
-   <img src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/gerais%2Ffork.png?alt=media&token=7030e997-246a-41fe-a75f-2a2ced61e54d" alt="Como adicionar o projeto no repositório"/>
-   </details>
-- Crie os arquivos do projeto dentro deste repo;
-- Execute o fluxo de entrega do git. **Lembre-se de abrir os PRs para seu próprio repositório.**
-- Para isso, você precisará fazer o projeto utilizando **branches**. Evite fazer as alterações direto na branch ```main```
-    <details>
-       <summary>Dúvidas sobre o Git & Github?</summary>
-       <p>Adiciomos um vídeo explicando o <strong>processo de entrega</strong> [do fork ao pull request] no Material Assincrono da Aula de <a href="https://estudante.labenu.com.br/conteudos/tecnico/mod1/Git%20e%20Github">Git e Github</a>. Esse vídeo também exemplifica situações que podem acontecer durante o fluxo de utilização do Git.</p>
-    </details>
-- Faça o deploy do projeto. Pode ser ultilizado o [surge](https://labenu.notion.site/Deploy-de-front-React-com-Surge-f902a03ec1d247dc9af9aee5a1469d96), Github pages ou outra ferramenta que faça a disponibilização do seu site para acesso público;
-- Adicionar o link do deploy no readme do seu projeto/repositório:
-
-
-- Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/S9XChPZravP3WdxL6) 
-
+## 📫 Contato
+- linkedin: https://www.linkedin.com/in/flavia-santos-dev/
 
