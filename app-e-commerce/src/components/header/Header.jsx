@@ -5,7 +5,7 @@ import { Container } from "../../Container"
 
 
 export function Header(props) {
-    const { gender, setGender, description, setDescription, setFilterIsOn, setScreen, screen, totalItems, setClear, setTotalItems, setCart, typeGender } = props
+    const { setGender, description, setDescription, setFilterIsOn, setScreen, screen, totalItems, setClear, setTotalItems, setCart } = props
 
     function selectFilter(e, setState, text) {
         setState(e.target.value)
