@@ -1,4 +1,4 @@
-# projeto-frontendreact
+# E-Commerce LabSpace 
 
 LabSpace é um projeto de Introdução ao React JS e o seu objetivo é que funcione como o front-end de um E-Commerce, seguindo uma lista de pré-requisitos e exigências. Para esse projeto utilizei as seguintes tecnologias:
 
